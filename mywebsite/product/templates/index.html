@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'cssproduct/style.css' %}">
+    <link rel="stylesheet" href="{% static 'cssproduct/riset.css' %}">
+    <title>{{alamat}} | jssonstore</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            
+            <h1>Selamat datang di {{judul}}</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+
+            <img class="bg-home" src="{% static 'img/backgroundproduct.jpg'%}" alt=""> 
+
+            <!-- template link -->
+            <ul class="product-list">
+                {% for link,name in nav %}
+                    <li>
+                        <a href="{{link}}" title="">{{name}}</a>
+                    </li>
+                {%  endfor  %}
+            </ul>
+        </div>
+        
+        <section class="product">
+            <h1 class="penjelasan">{{penjelasan}}</h1>
+            <div class="row">
+                <div class="barang">
+                    <h1>{{h1}}</h1>
+                    <img src="{% static product1 %}" alt="">
+                        <br>
+                    <a href="/">Check it</a>
+                </div>
+
+                <div class="barang">
+                    <h1>{{h2}}</h1>
+                        <img src="{% static product2 %}" alt="">
+                        <br>
+                    <a href="/">Check it</a>
+                </div>
+
+                <div class="barang">
+                    <h1>{{h3}}</h1>
+                        <img src="{% static product3 %}" alt="">
+                        <br>
+                        <a href="/">Check it</a>
+                </div>
+
+                <div class="barang">
+                    <h1>{{h4}}</h1>
+                        <img src="{% static product4 %}" alt="">
+                        <br>
+                        <a href="/">Check it</a>
+                </div>
+
+                <div class="barang">
+                    <h1>{{h5}}</h1>
+                        <img src="{% static product5 %}" alt="">
+                        <br>
+                        <a href="/">Check it</a>
+                </div>
+
+                <div class="barang">
+                    <h1>{{h6}}</h1>
+                        <img src="{% static product6 %}" alt="">
+                        <br>
+                        <a href="/">Check it</a>
+                </div>
+
+            </div>
+        </section>
+        <div class="clearfix"></div>
+        <footer class="copy">create by.jassonstore | since 2024 31 january</footer>
+
+    </div>
+
+    
+</body>
+</html>

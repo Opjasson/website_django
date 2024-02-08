@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/riset.css' %}">
+    <title>Mywebsite</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            
+            <h1>Selamat datang di JASSON STORE</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/product">Product</a></li>
+            </ul>
+            <img class="bg-home" src="{% static 'img/background1.jpg'%}" alt=""> 
+        </div>
+
+        <div class="content-home">
+            <p>Selamat datang di Jasson Store - Tempat Terbaik untuk mencari kebutuhan fashion anda. Temukan pengalaman online yang luar biasa dengan koleksi Distro kami. Kami berkomitmen memberikan solusi terbaik untuk membantu kaum Gend-z memenuhi kebutuhan fashionnya. Jelajahi situs kami dan temukan barang barang branded yang membedakan kami dari yang lain.</p>
+        </div>
+        <div class="product-sale">
+            <h1 class="category">Sale march</h1>
+            <div class="sale-1">
+                <h1>Shoes Super</h1>
+                <img src="{% static 'img/shoes1.jpg'%}" alt="">
+                    <br>
+                <a href="/">Check it</a>
+            </div>
+
+            <div class="sale-2">
+                <h1>Shoes Super</h1>
+                    <img src="{% static 'img/shoes2.jpg'%}" alt="">
+                    <br>
+                <a href="/">Check it</a>
+            </div>
+
+            <div class="sale-3">
+                <h1>Shoes Super</h1>
+                    <img src="{% static 'img/shoes3.jpg'%}" alt="">
+                    <br>
+                    <a href="/">Check it</a>
+            </div>
+            
+        </div>
+        <div class="clearfix"></div>
+        <footer class="copy">create by.jassonstore | since 2024 31 january</footer>
+
+    </div>
+
+</body>
+</html>
