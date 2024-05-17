@@ -23,7 +23,7 @@ def index(request):
         'nav' : [
             ['shoes/','Shoes'],
             ['hat/','Hat'],
-            ['/about','about'],
+            ['coming_soon/','coming_soon'],
         ]
         
     }
@@ -50,7 +50,7 @@ def shoes(request):
         'nav' : [
             ['/product/shoes','Shoes'],
             ['/product/hat','Hat'],
-            ['about/','about'],
+            ['/product/coming_soon','coming_soon'],
         ]
         
     }
@@ -64,24 +64,51 @@ def hat(request):
         'judul'     :   'Halaman product Hat',
         'penjelasan':   'HAT BRANDED',
         'h1'        :   'hat undertaker',
-        'h2'        :   'hat swordman',
-        'h3'        :   'hat nike',
-        'h4'        :   'hat superjoy',
-        'h5'        :   'hat distro',
-        'h6'        :   'hat kehed',
-        'product1'  :   'img/hat4.jpg',
+        'h2'        :   'hat coolman',
+        'h3'        :   'hat starboy',
+        'h4'        :   'hat enjoy',
+        'h5'        :   'hat nike',
+        'h6'        :   'hat ardiles',
+        'product1'  :   'img/hat1.jpg',
         'product2'  :   'img/hat5.jpeg',
-        'product3'  :   'img/hat1.jpg',
-        'product4'  :   'img/hat2.jpg',
-        'product5'  :   'img/hat3.jpg',
+        'product3'  :   'img/hat2.jpg',
+        'product4'  :   'img/hat3.jpg',
+        'product5'  :   'img/hat4.jpg',
         'product6'  :   'img/hat6.jpeg',
         
         'nav' : [
             ['/product/shoes','Shoes'],
             ['/product/hat','Hat'],
-            ['/about','about'],
+            ['/product/coming_soon','coming_soon'],
         ]
     }
     
     return render(request, 'index.html',context)
 
+def coming_soon(request):
+    
+    context = {
+        'alamat'    :   'Soon',
+        'judul'     :   'Coming soon product',
+        'penjelasan':   'Coming soon',
+        'h1'        :   'xxx',
+        'h2'        :   'xxx',
+        'h3'        :   'xxx',
+        'h4'        :   'xxx',
+        'h5'        :   'xxx',
+        'h6'        :   'xxx',
+        'product1'  :   'img/wnext.jpg',
+        'product2'  :   'img/wnext.jpg',
+        'product3'  :   'img/wnext.jpg',
+        'product4'  :   'img/wnext.jpg',
+        'product5'  :   'img/wnext.jpg',
+        'product6'  :   'img/wnext.jpg',
+        
+        'nav' : [
+            ['/product/shoes','Shoes'],
+            ['/product/hat','Hat'],
+            ['/product/coming_soon','coming_soon'],
+        ]
+    }
+    
+    return render(request, 'index.html',context)
